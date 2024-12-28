@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Get Package Home Assignment Suite" parallel="tests">
+
+    <listeners>
+        <listener class-name="utils.ExtentTestNGIReporterListener"/>
+    </listeners>
+
+<!--    <test name="01 Login">-->
+<!--        <classes>-->
+<!--            <class name="tests.LoginTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+    <test name="02 Delivery">
+        <classes>
+            <class name="tests.DeliveryTest"/>
+        </classes>
+    </test>
+
+<!--    <test name="03 Eilat Delivery">-->
+<!--        <classes>-->
+<!--            <class name="tests.EilatDeliveryTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+<!--    <test name="04 Required Field">-->
+<!--        <classes>-->
+<!--            <class name="tests.RequiredFieldsTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+
+
+</suite>
