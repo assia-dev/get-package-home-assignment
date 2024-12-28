@@ -74,7 +74,7 @@ public class DeliveryHelper {
         BU.assertEquals(BU.getTextByElement(DeliveryLocators.TXT_DELIVERY_PRICE)
                 , listPrice, "The delivery list price is incorrect");
         BU.clickOnElementWithJS(DeliveryLocators.CHBOX_SELECT_EXPRESS_SERVICE_TYPE);
-        BU.sleep(1500);
+        BU.sleep(2000);
         BU.waitForLoadingAnimate();
         BU.assertEquals(BU.getTextByElement(DeliveryLocators.TXT_DELIVERY_PRICE)
                 , expressPrice, "The express delivery price is incorrect");
