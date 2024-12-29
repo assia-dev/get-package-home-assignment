@@ -11,7 +11,7 @@ public class DeliveryConstants {
 
 
     //Delivery sizes
-    public static final String DELIVERY_SIZE_ENVELOP = "Envelop";
+    public static final String DELIVERY_SIZE_ENVELOPE = "Envelope";
     public static final String DELIVERY_SIZE_SMALL = "Small";
     public static final String DELIVERY_SIZE_MEDIUM = "Medium";
     public static final String DELIVERY_SIZE_LARGE = "Large";
@@ -19,7 +19,7 @@ public class DeliveryConstants {
 
 
     public static final Map<String, String> deliverySizes = new HashMap<>() {{
-        put(DELIVERY_SIZE_ENVELOP, DeliveryLocators.BTN_SIZE_ENVELOPE);
+        put(DELIVERY_SIZE_ENVELOPE, DeliveryLocators.BTN_SIZE_ENVELOPE);
         put(DELIVERY_SIZE_SMALL, DeliveryLocators.BTN_SIZE_SMALL);
         put(DELIVERY_SIZE_MEDIUM,DeliveryLocators.BTN_SIZE_MEDIUM);
         put(DELIVERY_SIZE_LARGE,DeliveryLocators.BTN_SIZE_LARGE);
