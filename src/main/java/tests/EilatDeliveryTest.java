@@ -11,7 +11,7 @@ public class EilatDeliveryTest extends BaseUtils {
     @BeforeClass
     public void beforeClass() {
         commonHelper.navigateDirectlyToDeliveryPage();
-        deliveryPageHelper.setDeliverySize(DeliveryConstants.DELIVERY_SIZE_SMALL);
+        deliveryPageHelper.setDeliverySize(DeliveryConstants.DELIVERY_SIZE_LARGE);
         deliveryPageHelper.setPickupAddress("הצדפים, אילת, ישראל", "200");
         deliveryPageHelper.setDropOffAddress("יצחק שדה, תל אביב-יפו, ישראל", "200");
     }
