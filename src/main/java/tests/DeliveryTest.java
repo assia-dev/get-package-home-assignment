@@ -1,4 +1,4 @@
-package tests;
+9package tests;
 
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
@@ -28,13 +28,13 @@ public class DeliveryTest extends BaseUtils {
 
     @Test(priority = 2)
     public void testSetPickupAddress() {
-        deliveryPageHelper.setPickupAddress("תל אביב ההגנה, תל אביב-יפו, ישראל","200");
+        deliveryPageHelper.setPickupAddress("תל אביב ההגנה, תל אביב-יפו, ישראל","20");
     }
 
 
     @Test(priority = 3)
     public void testSetDropOffAddress() {
-        deliveryPageHelper.setDropOffAddress("יצחק שדה, תל אביב-יפו, ישראל","200");
+        deliveryPageHelper.setDropOffAddress("יצחק שדה, תל אביב-יפו, ישראל","20");
     }
 
 
