@@ -276,6 +276,12 @@ public class AutomationUtilsByPlaywright extends BrowserManager {
             captureScreenShot(e.toString());
             throw e;
         }
+
+
+    }
+
+    public void scrollIntoElementView(String selector) {
+        findElement(selector).scrollIntoViewIfNeeded();
     }
 
 
@@ -542,7 +548,7 @@ public class AutomationUtilsByPlaywright extends BrowserManager {
     public void selectElementByText(String inputEle, CharSequence charSequence) {
         try {
             sendKeysToHiddenElement(inputEle, String.valueOf(charSequence));
-            waitForElementToBeDisplayed(".pac-container .pac-item",10);
+            waitForElementToBeDisplayed(".pac-container .pac-item", 10);
             clickOnElement(".pac-container .pac-item");
         } catch (Exception e) {
             captureScreenShot(e.toString());

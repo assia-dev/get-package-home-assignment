@@ -22,7 +22,7 @@ public class CommonHelper {
 
 
     public void navigateToLoginPage() {
-        BU.loggerInfo("Navigating to login page");
+        System.out.println("Navigating to login page");
         BU.page.navigate("https://sender.getpackage.com/login");
         BU.waitForLoadingAnimate();
         validateAppOpened();
@@ -31,7 +31,7 @@ public class CommonHelper {
 
 
     public void navigateDirectlyToDeliveryPage() {
-        BU.loggerInfo("Navigating directly to delivery page");
+        System.out.println("Navigating directly to delivery page");
         BU.page.navigate("https://sender.getpackage.com/delivery");
         BU.waitForLoadingAnimate();
         getDeliveryHelper().validateDeliveryPageOpened();
@@ -40,7 +40,7 @@ public class CommonHelper {
 
 
     public void validateAppOpened() {
-        BU.loggerInfo("Validate 'Get Package' app is opened");
+        System.out.println("Validate 'Get Package' app is opened");
         BU.waitForLoadingAnimate();
         BU.validateStepByDisplayed(LoginLocators.BTN_EMAIL_AND_PASSWORD_TAB
                 , "Get Package App Isn't Opened");

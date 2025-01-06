@@ -14,7 +14,7 @@ public class LoginPageHelper {
 
     public void clickOnEmailAndPasswordTab() {
         if (BU.isElementDisplayed(LoginLocators.INPUT_USER_NAME))
-            BU.loggerInfo("Click on email and password tab");
+            System.out.println("Click on email and password tab");
         BU.clickOnElement(LoginLocators.BTN_EMAIL_AND_PASSWORD_TAB);
         BU.waitForLoadingAnimate();
         BU.validateStepByDisplayed(LoginLocators.INPUT_PASSWORD,
@@ -23,7 +23,7 @@ public class LoginPageHelper {
 
 
     public void setUserEmail(String userEmail) {
-        BU.loggerInfo("Set user email: " + userEmail);
+        System.out.println("Set user email: " + userEmail);
         BU.sendKeysToElement(LoginLocators.INPUT_USER_NAME, userEmail);
         BU.waitForLoadingAnimate();
 //        BU.assertEquals(BU.getAttrOfElement(LoginLocators.INPUT_USER_NAME, "value"), userEmail,
@@ -33,7 +33,7 @@ public class LoginPageHelper {
 
 
     public void setPassword(String password) {
-        BU.loggerInfo("Set password");
+        System.out.println("Set password");
         BU.sendKeysToElement(LoginLocators.INPUT_PASSWORD, password);
         BU.waitForLoadingAnimate();
     //    BU.assertEquals(BU.getAttrOfElement(LoginLocators.INPUT_PASSWORD, "value"), password,
@@ -43,14 +43,14 @@ public class LoginPageHelper {
 
 
     public void clickOnLogin() {
-        BU.loggerInfo("Click on login");
+        System.out.println("Click on login");
         BU.clickOnElement(LoginLocators.BTN_SUBMIT);
         BU.waitForLoadingAnimate();
     }
 
 
     public void validateWrongUserDetailsError() {
-        BU.loggerInfo("Validate wrong email user error displayed");
+        System.out.println("Validate wrong email user error displayed");
         BU.waitForLoadingAnimate();
         BU.validateStepByDisplayed(LoginLocators.IMG_ERROR,
                 "The wrong email error isn't displayed");
@@ -59,7 +59,7 @@ public class LoginPageHelper {
 
 
     public void closeErrorPopup() {
-        BU.loggerInfo("Close error popup");
+        System.out.println("Close error popup");
         BU.waitForLoadingAnimate();
         BU.clickOnElement(LoginLocators.BTN_CLOSE_ERROR_POPUP);
         BU.waitForLoadingAnimate();

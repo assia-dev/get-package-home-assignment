@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN">
     <properties>
+        <property name="log_level" value="info"/>
         <property name="pattern">[%d{HH:mm:ss}] %level - %msg%n%throwable</property>
     </properties>
     <Appenders>
         <Console name="ConsoleAppender" target="SYSTEM_OUT">
             <PatternLayout pattern="${pattern}"/>
         </Console>
-        <ReportPortalLog4j2Appender name="ReportPortalAppender">
-            <PatternLayout pattern="${pattern}"/>
-        </ReportPortalLog4j2Appender>
     </Appenders>
 </Configuration>
