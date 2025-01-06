@@ -23,6 +23,7 @@ public class DeliveryHelper {
 
     public void setPickupAddress(String pickupAddress, String addressDetails) {
         BU.loggerInfo("Setting pickup address to " + pickupAddress + ",  and details to: " + addressDetails);
+        BU.scrollIntoElementView(DeliveryLocators.INPUT_PICKUP_ADDRESS);
         BU.selectElementByText(DeliveryLocators.INPUT_PICKUP_ADDRESS, pickupAddress);
         BU.waitForLoadingAnimate();
         BU.sendKeysToElement(DeliveryLocators.TXTBX_PICKUP_ADDRESS_DETAILS, addressDetails);
@@ -33,6 +34,7 @@ public class DeliveryHelper {
 
     public void setDropOffAddress(String dropOffAddress, String addressDetails) {
         BU.loggerInfo("Setting dropOffAddress to " + dropOffAddress + ",  and details to: " + addressDetails);
+        BU.scrollIntoElementView(DeliveryLocators.INPUT_DROP_OFF_ADDRESS);
         BU.selectElementByText(DeliveryLocators.INPUT_DROP_OFF_ADDRESS, dropOffAddress);
         BU.waitForLoadingAnimate();
         BU.sendKeysToElement(DeliveryLocators.TXTBX_DROP_OFF_ADDRESS_DETAILS, addressDetails);
