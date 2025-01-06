@@ -10,7 +10,7 @@ import org.testng.Assert;
 import org.testng.ITestContext;
 
 import java.io.File;
-import java.nio.file.Path;
+import java.nio.file.Path;f
 import java.nio.file.Paths;
 
 import java.time.LocalDate;
@@ -231,6 +231,11 @@ public class AutomationUtilsByPlaywright extends BrowserManager {
             captureScreenShot(e.toString());
             return page.locator(selector).all();
         }
+    }
+
+    
+    public void scrollIntoElementView(String selector) {
+        findElement(selector).scrollIntoViewIfNeeded();
     }
 
 

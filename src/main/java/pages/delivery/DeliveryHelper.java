@@ -23,6 +23,7 @@ public class DeliveryHelper {
 
     public void setPickupAddress(String pickupAddress, String addressDetails) {
         System.out.println("Setting pickup address to " + pickupAddress + ",  and details to: " + addressDetails);
+        BU.scrollIntoElementView(DeliveryLocators.INPUT_PICKUP_ADDRESS);
         BU.selectElementByText(DeliveryLocators.INPUT_PICKUP_ADDRESS, pickupAddress);
         BU.waitForLoadingAnimate();
         BU.sendKeysToElement(DeliveryLocators.TXTBX_PICKUP_ADDRESS_DETAILS, addressDetails);
